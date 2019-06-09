@@ -30,9 +30,9 @@ class ToDoListViewController: UITableViewController {
         newItem3.title = "Defeat Demogorgans"
         itemArray.append(newItem3)
         
-//        if let items = defaults.array(forKey: "ToDoListArray") as? [String] {
-//            itemArray = items
-//        }
+       if let items = defaults.array(forKey: "ToDoListArray") as? [Item] {
+            itemArray = items
+       }
     }
     
     //Mark - Tableview Datasource Methods
